@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sample-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sample?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin2345
+    hikari:
+      maximum-pool-size: 12
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+      connection-test-query: select 1
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
