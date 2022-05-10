@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 /**
  * @author xiaotian on 2022/5/8
  */
-public class UserServiceTest extends BaseTest {
+public class UserConvertTest extends BaseTest {
 
     @Resource
     private UserConvert userConvert;
