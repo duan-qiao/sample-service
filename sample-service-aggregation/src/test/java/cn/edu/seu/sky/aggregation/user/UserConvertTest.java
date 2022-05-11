@@ -7,6 +7,7 @@ import cn.edu.seu.sky.aggregation.BaseTest;
 import cn.edu.seu.sky.api.dto.UserDTO;
 import cn.edu.seu.sky.domain.entity.User;
 import cn.edu.seu.sky.service.convert.UserConvert;
+import cn.edu.seu.sky.service.utils.BeanUtils;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
 
@@ -47,5 +48,26 @@ public class UserConvertTest extends BaseTest {
 
         List<User> list = userConvert.toSources(dtoList);
         list.forEach(System.out::println);
+    }
+
+    @Test
+    public void testBeanUtil() {
+        User user = new User();
+        user.setId(0L);
+        user.setAccount("java");
+        user.setNickName("javascript");
+        user.setAge(23);
+        user.setTelephone("13305173766");
+        user.setEmail("java@163.com");
+        user.setStatus(1);
+        user.setCreateTime(LocalDateTime.now());
+        user.setUpdateTime(LocalDateTime.now());
+
+        UserDTO userDTO = BeanUtils.copy(user, UserDTO::new);
+        System.out.println("target: " + userDTO);
+        System.out.println("-------------------------------------");
+
+        List<UserDTO> dtoList = BeanUtils.copyList(Lists.newArrayList(user), UserDTO::new);
+        dtoList.forEach(System.out::println);
     }
 }
