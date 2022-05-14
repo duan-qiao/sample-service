@@ -1,6 +1,7 @@
 package cn.edu.seu.sky.domain.api;
 
 import cn.edu.seu.sky.domain.entity.User;
+import cn.edu.seu.sky.domain.param.UserQueryReq;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -35,7 +36,7 @@ public interface UserDomainService {
     User queryById(Long id);
 
     /**
-     * 根据用户姓名查询用户
+     * 根据用户年龄查询用户
      * @param start 年龄
      * @param end 年龄
      * @return 用户列表
@@ -49,4 +50,11 @@ public interface UserDomainService {
      * @return 用户列表
      */
     PageInfo<User> queryPage(int pageNum, int pageSize);
+
+    /**
+     * 根据条件查询用户
+     * @param request request
+     * @return 用户列表
+     */
+    List<User> queryByCond(UserQueryReq request);
 }
