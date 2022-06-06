@@ -5,9 +5,9 @@ import java.util.List;
 
 import cn.edu.seu.sky.aggregation.BaseTest;
 import cn.edu.seu.sky.api.dto.UserDTO;
+import cn.edu.seu.sky.common.utils.BeanUtils;
 import cn.edu.seu.sky.domain.entity.User;
 import cn.edu.seu.sky.service.convert.UserConvert;
-import cn.edu.seu.sky.service.utils.BeanUtils;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
 

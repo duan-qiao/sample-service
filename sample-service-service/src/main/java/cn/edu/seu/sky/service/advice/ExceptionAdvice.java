@@ -1,8 +1,8 @@
 package cn.edu.seu.sky.service.advice;
 
-import cn.edu.seu.sky.api.common.BaseResult;
-import cn.edu.seu.sky.api.enums.ResultCode;
-import cn.edu.seu.sky.api.exception.SampleException;
+import cn.edu.seu.sky.common.bean.BaseResult;
+import cn.edu.seu.sky.common.enums.ResultCode;
+import cn.edu.seu.sky.common.exception.SampleException;
 import cn.edu.seu.sky.api.service.RpcParam;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

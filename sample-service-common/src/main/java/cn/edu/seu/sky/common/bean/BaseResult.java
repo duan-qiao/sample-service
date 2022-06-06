@@ -1,6 +1,6 @@
-package cn.edu.seu.sky.api.common;
+package cn.edu.seu.sky.common.bean;
 
-import cn.edu.seu.sky.api.enums.ResultCode;
+import cn.edu.seu.sky.common.enums.ResultCode;
 import lombok.Data;
 
 import java.io.Serializable;

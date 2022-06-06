@@ -9,22 +9,26 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>sample-service-api</artifactId>
-    <version>${sample-service-api.version}</version>
-    <name>sample-service-api</name>
+    <artifactId>sample-service-common</artifactId>
+    <version>${sample-service.version}</version>
+    <name>sample-service-common</name>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.edu.seu.sky</groupId>
-            <artifactId>sample-service-common</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 

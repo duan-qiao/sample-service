@@ -1,4 +1,4 @@
-package cn.edu.seu.sky.api.enums;
+package cn.edu.seu.sky.common.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

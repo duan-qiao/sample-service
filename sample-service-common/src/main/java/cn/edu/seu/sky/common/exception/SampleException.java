@@ -1,4 +1,4 @@
-package cn.edu.seu.sky.api.exception;
+package cn.edu.seu.sky.common.exception;
 
 /**
  * @author xiaotian on 2022/5/7

@@ -3,7 +3,6 @@ package cn.edu.seu.sky.service.impl;
 import cn.edu.seu.sky.api.dto.UserDTO;
 import cn.edu.seu.sky.api.param.UserQueryParam;
 import cn.edu.seu.sky.api.service.UserService;
-import cn.edu.seu.sky.domain.api.UserDomainService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -15,8 +14,8 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Resource
-    private UserDomainService userDomainService;
+//    @Resource
+//    private UserDomainService userDomainService;
 
     @Override
     public void saveOrUpdate(UserDTO userDTO) {

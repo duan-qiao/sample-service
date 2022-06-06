@@ -1,5 +1,6 @@
-package cn.edu.seu.sky.domain.api;
+package cn.edu.seu.sky.infrastructure.repository;
 
+import cn.edu.seu.sky.common.bean.PageResult;
 import cn.edu.seu.sky.domain.entity.User;
 import cn.edu.seu.sky.domain.param.UserQueryReq;
 import com.github.pagehelper.PageInfo;
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * @author xiaotian on 2022/5/7
  */
-public interface UserDomainService {
+public interface UserRepository {
     /**
      * 保存用户
      * @param user 用户
@@ -49,7 +50,7 @@ public interface UserDomainService {
      * @param pageSize 页大小
      * @return 用户列表
      */
-    PageInfo<User> queryPage(int pageNum, int pageSize);
+    PageResult<User> queryPage(int pageNum, int pageSize);
 
     /**
      * 根据条件查询用户

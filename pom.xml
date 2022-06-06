@@ -19,6 +19,7 @@
     <modules>
         <module>sample-service-aggregation</module>
         <module>sample-service-api</module>
+        <module>sample-service-common</module>
         <module>sample-service-domain</module>
         <module>sample-service-infrastructure</module>
         <module>sample-service-service</module>
@@ -49,6 +50,11 @@
                 <groupId>cn.edu.seu.sky</groupId>
                 <artifactId>sample-service-api</artifactId>
                 <version>${sample-service-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.edu.seu.sky</groupId>
+                <artifactId>sample-service-common</artifactId>
+                <version>${sample-service.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.edu.seu.sky</groupId>

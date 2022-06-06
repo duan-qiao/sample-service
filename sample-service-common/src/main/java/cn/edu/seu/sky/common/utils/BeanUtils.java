@@ -1,4 +1,4 @@
-package cn.edu.seu.sky.service.utils;
+package cn.edu.seu.sky.common.utils;
 
 import java.util.ArrayList;
 import java.util.List;

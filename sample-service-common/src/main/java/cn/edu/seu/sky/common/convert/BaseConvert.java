@@ -1,4 +1,4 @@
-package cn.edu.seu.sky.service.convert;
+package cn.edu.seu.sky.common.convert;
 
 import java.util.List;
 import java.util.stream.Collectors;

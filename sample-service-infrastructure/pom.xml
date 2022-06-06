@@ -19,6 +19,10 @@
             <artifactId>sample-service-domain</artifactId>
         </dependency>
         <dependency>
+            <groupId>cn.edu.seu.sky</groupId>
+            <artifactId>sample-service-common</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>

@@ -1,9 +1,9 @@
 package cn.edu.seu.sky.aggregation.user;
 
 import cn.edu.seu.sky.aggregation.BaseTest;
-import cn.edu.seu.sky.domain.api.UserDomainService;
+import cn.edu.seu.sky.common.bean.PageResult;
+import cn.edu.seu.sky.infrastructure.repository.UserRepository;
 import cn.edu.seu.sky.domain.entity.User;
-import com.github.pagehelper.PageInfo;
 import org.junit.jupiter.api.Test;
 
 import javax.annotation.Resource;
@@ -12,10 +12,10 @@ import java.util.List;
 /**
  * @author xiaotian on 2022/5/8
  */
-public class UserDomainServiceTest extends BaseTest {
+public class UserRepositoryTest extends BaseTest {
 
     @Resource
-    private UserDomainService userDomainService;
+    private UserRepository userRepository;
 
     @Test
     public void testSave() {
@@ -25,7 +25,7 @@ public class UserDomainServiceTest extends BaseTest {
         user.setAge(21);
         user.setTelephone("13300001111");
         user.setEmail("zhang.san@163.com");
-        userDomainService.save(user);
+        userRepository.save(user);
     }
 
     @Test
@@ -37,18 +37,18 @@ public class UserDomainServiceTest extends BaseTest {
         user.setAge(22);
         user.setTelephone("13300002222");
         user.setEmail("zhang.san@163.com");
-        userDomainService.updateById(user);
+        userRepository.updateById(user);
     }
 
     @Test
     public void testQueryOne() {
-        User user = userDomainService.queryById(1L);
+        User user = userRepository.queryById(1L);
         System.out.println(user);
     }
 
     @Test
     public void testQueryList() {
-        List<User> users = userDomainService.queryByAge(20, 23);
+        List<User> users = userRepository.queryByAge(20, 23);
         users.forEach(System.out::println);
     }
 
@@ -56,9 +56,9 @@ public class UserDomainServiceTest extends BaseTest {
     public void testQueryAll() {
         int pageNum = 1;
         int pageSize = 5;
-        PageInfo<User> pageInfo;
+        PageResult<User> pageInfo;
         do {
-            pageInfo = userDomainService.queryPage(pageNum, pageSize);
+            pageInfo = userRepository.queryPage(pageNum, pageSize);
             pageInfo.getList().forEach(System.out::println);
             pageNum++;
         } while (pageInfo.isHasNextPage());
@@ -66,6 +66,6 @@ public class UserDomainServiceTest extends BaseTest {
 
     @Test
     public void testDelete() {
-        userDomainService.deleteById(1L);
+        userRepository.deleteById(1L);
     }
 }
