@@ -1,7 +1,7 @@
 package cn.edu.seu.sky.aggregation.user;
 
 import cn.edu.seu.sky.aggregation.BaseTest;
-import cn.edu.seu.sky.common.bean.PageResult;
+import cn.edu.seu.sky.common.result.PageResult;
 import cn.edu.seu.sky.infrastructure.repository.UserRepository;
 import cn.edu.seu.sky.domain.entity.User;
 import org.junit.jupiter.api.Test;

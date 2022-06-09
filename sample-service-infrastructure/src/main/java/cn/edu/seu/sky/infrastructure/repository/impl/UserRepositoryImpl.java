@@ -1,6 +1,6 @@
 package cn.edu.seu.sky.infrastructure.repository.impl;
 
-import cn.edu.seu.sky.common.bean.PageResult;
+import cn.edu.seu.sky.common.result.PageResult;
 import cn.edu.seu.sky.common.utils.BeanUtils;
 import cn.edu.seu.sky.infrastructure.repository.UserRepository;
 import cn.edu.seu.sky.domain.entity.User;

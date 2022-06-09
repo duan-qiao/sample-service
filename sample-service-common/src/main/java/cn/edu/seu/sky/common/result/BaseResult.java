@@ -1,4 +1,4 @@
-package cn.edu.seu.sky.common.bean;
+package cn.edu.seu.sky.common.result;
 
 import cn.edu.seu.sky.common.enums.ResultCode;
 import lombok.Data;

@@ -1,9 +1,8 @@
 package cn.edu.seu.sky.infrastructure.repository;
 
-import cn.edu.seu.sky.common.bean.PageResult;
+import cn.edu.seu.sky.common.result.PageResult;
 import cn.edu.seu.sky.domain.entity.User;
 import cn.edu.seu.sky.domain.param.UserQueryReq;
-import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
